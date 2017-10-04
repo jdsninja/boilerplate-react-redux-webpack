@@ -32,7 +32,7 @@ export const requestPlans = () => {
     })
     .send(drafts)
     .end((error, response) => AuthUtils.checkResponseAndContinue(error, response, () => {
-      Store.dispatch({ type: 'REQUEST_PLANS_SUCCESS',  data: response.body })
+      Store.dispatch({ type: 'REQUEST_PLANS_SUCCESS',  data: response.body })      
     }))
     
   return {
@@ -49,7 +49,6 @@ export const requestPrice = (id) => {
       'Qover-Api-Version' : 1.0, 
     })
     .end((error, response) => {
-
     })
   return {
     type: 'REQUEST_PRICE'

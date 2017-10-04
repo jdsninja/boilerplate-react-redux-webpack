@@ -32,6 +32,7 @@ class Main extends React.Component {
   }
 
   showSnackbar = (notifications) => {
+    console.log(notifications)
     this.setState({
       snackbar_open: true,
       snackbar_message: notifications.message

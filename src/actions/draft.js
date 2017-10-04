@@ -25,6 +25,7 @@ export const setDraft = (draft) => {
 
 export const requestDraftPrices = (draftId) => {
   //TODO find better way to set apikey
+  Store.dispatch({ type: 'ADD_NOTIFICATION',  data: {message:'Waiting for plans'} })
   request
     .post(`${CONFIG.API.URL}be/motor/gap/drafts/${draftId}/price-requests?apikey=${CONFIG.API.KEY}`)
     .set({
@@ -32,7 +33,8 @@ export const requestDraftPrices = (draftId) => {
       'Content-Type': 'application/json'
     })
     .end((error, response) => AuthUtils.checkResponseAndContinue(error, response, () => {
-      Store.dispatch({ type: 'REQUEST_DRAFT_PRICES_SUCCESS',  data: response.body })
+      Store.dispatch({ type: 'REQUEST_DRAFT_PRICES_SUCCESS',  data: response.body })      
+      Store.dispatch({ type: 'ADD_NOTIFICATION',  data: {message:'Plans loaded with success'} })
     }))
     
   return {

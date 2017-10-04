@@ -3,7 +3,6 @@ import { logoutAndRedirect } from '../actions/auth'
 
 export const checkResponseAndContinue = (error, response, fn) => {
   if (error || !response.ok) {
-    console.log(response)
     if (response.status === 401) {
       Store.dispatch(logoutAndRedirect())
     } else {
