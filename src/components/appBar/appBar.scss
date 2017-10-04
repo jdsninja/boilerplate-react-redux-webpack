@@ -1,0 +1,56 @@
+// .app-bar{
+//   clear:both;
+//   background: #263238;
+//   z-index: 10;  
+//   padding-top: 0;
+//   line-height: 44px;
+//   height: 44px;
+//   color:white;
+//   font-size:13px;
+//   position: fixed;
+//   width: 100%;
+//   a{
+//     color:white;
+//     display: inline-block;
+//     &:hover{
+//       background-color:transparent
+//     }
+//   }
+//   .dropdown-toggle{
+//      &:hover{
+//       background-color:transparent
+//     }
+//   }
+//   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+//     color:white;
+//   }
+//   .left,
+//   .center,
+//   .right{
+//     width:33%;
+//     float:left;
+//   }
+//   .left{
+
+//   font-size: 17px;
+//   }
+//   .center{
+//     text-align:center;
+//     a{
+//       margin: 0 10px;
+//     }
+//   }
+//   .right{
+//     float:right;
+//   }
+//   .logo{
+//     background: url('../../../img/logoRound.png') 0 0 no-repeat transparent;
+//     display: inline-block;
+//     padding: 0;
+//     margin-right: 20px;
+//     background-size: 27px;
+//     padding-left: 47px;
+//     background-position: 10px;
+//     text-transform: uppercase;
+//   }
+// }

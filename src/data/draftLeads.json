@@ -1,0 +1,6 @@
+{
+  "partnerReference": {
+    "reference": "yourreference"
+  },
+  "transport": "EMAIL"
+}
