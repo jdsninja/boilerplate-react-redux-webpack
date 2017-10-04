@@ -2,12 +2,10 @@
 
 
 ## Roadmap
-. Webpack v2
-. React v16
 
+* Webpack v2
+* React v16
+* Make sure the webpack build work fine
+* Clean the code (remove all the crap :)
+* Integrate Mandrill API
 
-## Questions
-
-- what draftId come from
-- what are the required field for /drafts/:draftId/price-requests
-- what are the namespace for driver​ ​name​, driver​ ​age​, car​ ​model​ and email. I need to send them to the api but dont know how and where to set them.
